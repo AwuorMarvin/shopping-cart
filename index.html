@@ -1,56 +1,98 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="jquery-ui-1.11.4.custom/jquery-ui.css">
-  
-</head>
-<body>
-  <div class="page row">
-    <div class="main col-md-9">
-      <ul class="products">
-    <li>
-        <a href="#" class="item">
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLzYqdEQgf5XTf6anr3Q4V-fJ0AN-Adfs6diXqUKAkRkSRlfsI"/>
-            <div>
-                <p>AK47</p>
-                <p>Price: Kshs. 15</p>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="#" class="item">
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLzYqdEQgf5XTf6anr3Q4V-fJ0AN-Adfs6diXqUKAkRkSRlfsI"/>
-            <div>
-                <p><strong>Assault Rifle</strong></p>
-                <p><strong>Price: Kshs. 200</strong></p>
-            </div>
-        </a>
-    </li>
-</ul>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title></title>
+    <!--<script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.11.4.custom/jquery-ui.css">
+    
+  </head>
+  <body>
+    <div class="page row">
+      <div class="main col-md-9">
+        <ul class="products">
+          <li>
+              <a href="#" class="item">
+                  <img src="images/shirt2.gif"/>
+                  <div>
+                      <p><strong>AK47</strong></p>
+                      <p><strong>Price: Kshs. 15</strong></p>
+                      <!-- <p><label><strong>Qty: <input type="text" name="my-item-qty" value="1" size="3" /></strong></label></p> -->
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="item">
+                  <img src="images/shirt6.gif"/>
+                  <div>
+                      <p><strong>Assault Rifle</strong></p>
+                      <p><strong>Price: Kshs. 200</strong></p>
+                      <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="item">
+                  <img src="images/shirt6.gif"/>
+                  <div>
+                      <p><strong>Assault Rifle</strong></p>
+                      <p><strong>Price: Kshs. 200</strong></p>
+                      <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="item">
+                  <img src="images/shirt6.gif"/>
+                  <div>
+                      <p><strong>Assault Rifle</strong></p>
+                      <p><strong>Price: Kshs. 200</strong></p>
+                      <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="item">
+                  <img src="images/shirt6.gif"/>
+                  <div>
+                      <p><strong>Assault Rifle</strong></p>
+                      <p><strong>Price: Kshs. 200</strong></p>
+                      <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
+                  </div>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="item">
+                  <img src="images/shirt6.gif"/>
+                  <div>
+                      <p><strong>Assault Rifle</strong></p>
+                      <p><strong>Price: Kshs. 200</strong></p>
+                      <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
+                  </div>
+              </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cart col-md-3">
+        <h1>Shopping Cart</h1>
+        <table id="cartcontent" style="width:300px;height:auto;">
+          <thead>
+              <tr>
+                  <th field="name" width=140>Name</th>
+                  <th field="quantity" width=60 align="right">Quantity</th>
+                  <th field="price" width=60 align="right">Price</th>
+              </tr>
+          </thead>
+        </table>
+        <p class="total">Total: Kshs. 0</p>
+        <h2>Drop here to add to cart</h2>
+      </div>
     </div>
-    <div class="cart col-md-3">
-      <div class="cart">
-    <h1>Shopping Cart</h1>
-    <table id="cartcontent" style="width:300px;height:auto;">
-        <thead>
-            <tr>
-                <th field="name" width=140>Name</th>
-                <th field="quantity" width=60 align="right">Quantity</th>
-                <th field="price" width=60 align="right">Price</th>
-            </tr>
-        </thead>
-    </table>
-    <p class="total">Total: Kshs. 0</p>
-    <h2>Drop here to add to cart</h2>
-</div>
-    </div>
-  </div>
-  <script type="text/javascript" src = "js/jquery.js"></script>
-  <script type="text/javascript" scr = "bootstrap-3.3.5-dist/js/bootstrap.js"></script>
-  <script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
-  <script type="text/javascript" src = "script.js"></script>
-</body>
-</html>
+    
+    <script type="text/javascript" src = "js/jquery.js"></script>    
+    <script type="text/javascript" scr = "bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+    <script src="js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src = "script.js"></script>
+  </body>
+  </html>

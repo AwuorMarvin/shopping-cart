@@ -11,12 +11,22 @@ body {
 .main {
   background-color: #999999;
   height: 100%;
+  /*position: relative;*/
+  z-index: 100;
 
+
+}
+
+.products li {
+  display: inline;
+  float: left;
+  margin: 10px;
 }
 
 .cart {
   background-color: #CCFFFF;
   height: 100%;
+  text-align: center;
 
 }
 
@@ -27,8 +37,25 @@ body {
   margin: 2px;
 }
 .item {
-  width: 150px; 
-  height: 150px; 
+  overflow: auto;
+  width: 200px; 
+  height: 250px; 
   padding: 0.5em;
   margin: 2px;
+  display: block;
+  text-decoration: none;
+}
+
+.item p {
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.total {
+  position: relative;
+}
+
+fieldset {
+  border: 2px;
 }
