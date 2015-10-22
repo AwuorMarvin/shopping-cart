@@ -1,18 +1,18 @@
 $(function(){
-            $('#cartcontent').datagrid({
-                singleSelect:true,
-                showFooter:true
-            });
+  $('#cartcontent').datagrid({
+    singleSelect:true,
+    showFooter:true
+    });
 
-            $('.item').draggable({
-                revert:true,
-                proxy:'clone',
-                onStartDrag:function(){
-                    $(this).draggable('options').cursor = 'not-allowed';
-                    $(this).draggable('proxy').css('z-index',10);
-                },
-                onStopDrag:function(){
-                    $(this).draggable('options').cursor='move';
+    $('.item').draggable({
+      revert:true,
+      proxy:'clone',
+      onStartDrag:function(){
+        $(this).draggable('options').cursor = 'not-allowed';
+        $(this).draggable('proxy').css('z-index',10);
+        },
+        onStopDrag:function(){
+            $(this).draggable('options').cursor='move';
                 }
             });
 
@@ -36,6 +36,10 @@ $(function(){
                 addProduct(name, parseFloat(price));
                 alert(name+ " has been added to your shopping cart.");
             });
+            $(document).on('click', '.remove', function () {
+            $(this).closest("tr").remove();
+            });
+
         });
      
         function addProduct(name,price){
@@ -53,7 +57,8 @@ $(function(){
                 data.rows.push({
                     name:name,
                     quantity:1,
-                    price:price
+                    price:price,
+                    action:"<a href='#' style='color:red' class='remove'>X</a>",
                 });
             }
             add();
@@ -66,13 +71,13 @@ $(function(){
             dg.datagrid('reloadFooter', [{name:'Total',price:cost}]);
         }
 
-//         $("#cartcontent").on("click", ".cancel", function (evt) {
+//         $(document).on("click", ".remove", function (evt) {
 //     var $this = $(evt.currentTarget),
 //         cartItem = $this.parent(),
 //         newPrice = parseInt($this.data('price'));
     
 //     cartItem.remove();
-//     sum = sum - newPrice;
-//     $("#sum").text(sum + "$");
+//     Total = Total - newPrice;
+//     $(".total").text(Total + "Kshs.");
 // });
    
