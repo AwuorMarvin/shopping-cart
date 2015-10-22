@@ -4,6 +4,7 @@ body {
   width: 100%;
 }
 
+
 .page {
   height: 100vh;
 }
@@ -58,4 +59,8 @@ body {
 
 fieldset {
   border: 2px;
+}
+
+.button {
+  text-align: center;
 }

@@ -1,10 +1,9 @@
-var data = {"total":0,"rows":[]};
-        var totalCost = 0;
-        
-        $(function(){
+$(function(){
             $('#cartcontent').datagrid({
-                singleSelect:true
+                singleSelect:true,
+                showFooter:true
             });
+
             $('.item').draggable({
                 revert:true,
                 proxy:'clone',
@@ -16,6 +15,7 @@ var data = {"total":0,"rows":[]};
                     $(this).draggable('options').cursor='move';
                 }
             });
+
             $('.cart').droppable({
                 onDragEnter:function(e,source){
                     $(source).draggable('options').cursor='auto';
@@ -29,9 +29,15 @@ var data = {"total":0,"rows":[]};
                     addProduct(name, parseFloat(price.split('.')[1]));
                 }
             });
+
+            $('#button').click(function(){
+                alert("here");
+            });
         });
         
         function addProduct(name,price){
+            var dg = $('#cartcontent');
+            var data = dg.datagrid('getData');
             function add(){
                 for(var i=0; i<data.total; i++){
                     var row = data.rows[i];
@@ -48,7 +54,11 @@ var data = {"total":0,"rows":[]};
                 });
             }
             add();
-            totalCost += price;
-            $('#cartcontent').datagrid('loadData', data);
-            $('div.cart .total').html('Total: Kshs: '+totalCost);
+            dg.datagrid('loadData', data);
+            var cost = 0;
+            var rows = dg.datagrid('getRows');
+            for(var i=0; i<rows.length; i++){
+                cost += rows[i].price*rows[i].quantity;
+            }
+            dg.datagrid('reloadFooter', [{name:'Total',price:cost}]);
         }

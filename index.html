@@ -4,8 +4,8 @@
     <title></title>
     <!--<script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>-->
     <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="easy-ui.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="jquery-ui-1.11.4.custom/jquery-ui.css">
     
   </head>
   <body>
@@ -36,38 +36,38 @@
               <a href="#" class="item">
                   <img src="images/shirt6.gif"/>
                   <div>
-                      <p><strong>Assault Rifle</strong></p>
-                      <p><strong>Price: Kshs. 200</strong></p>
+                      <p><strong>Cap</strong></p>
+                      <p><strong>Price: Kshs. 300</strong></p>
                       <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
                   </div>
               </a>
           </li>
           <li>
               <a href="#" class="item">
-                  <img src="images/shirt6.gif"/>
+                  <img src="images/croc.jpg"/>
                   <div>
-                      <p><strong>Assault Rifle</strong></p>
-                      <p><strong>Price: Kshs. 200</strong></p>
+                      <p><strong>Pet</strong></p>
+                      <p><strong>Price: Kshs. 2000</strong></p>
                       <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
                   </div>
               </a>
           </li>
           <li>
-              <a href="#" class="item">
-                  <img src="images/shirt6.gif"/>
+              <div class="item">
+                  <img src="images/lyiinng.jpg"/>
                   <div>
-                      <p><strong>Assault Rifle</strong></p>
-                      <p><strong>Price: Kshs. 200</strong></p>
-                      <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
+                      <p><strong>Nothing</strong></p>
+                      <p><strong>Price: Kshs. 190</strong></p>
+                      <button class="button" data-name="Nothing" data-price="190" class="button" >add to cart</button>
                   </div>
-              </a>
+              </div>
           </li>
           <li>
               <a href="#" class="item">
-                  <img src="images/shirt6.gif"/>
+                  <img src="images/lying.jpg"/>
                   <div>
-                      <p><strong>Assault Rifle</strong></p>
-                      <p><strong>Price: Kshs. 200</strong></p>
+                      <p><strong>House</strong></p>
+                      <p><strong>Price: Kshs. 278</strong></p>
                       <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
                   </div>
               </a>
@@ -76,16 +76,17 @@
       </div>
       <div class="cart col-md-3">
         <h1>Shopping Cart</h1>
-        <table id="cartcontent" style="width:300px;height:auto;">
-          <thead>
-              <tr>
-                  <th field="name" width=140>Name</th>
-                  <th field="quantity" width=60 align="right">Quantity</th>
-                  <th field="price" width=60 align="right">Price</th>
-              </tr>
-          </thead>
-        </table>
-        <p class="total">Total: Kshs. 0</p>
+        <table id="cartcontent" fitColumns="true" style="width1:300px;height:auto;">
+      <thead>
+        <tr>
+          <th field="name" width=140>Name</th>
+          <th field="quantity" width=60 align="right">Quantity</th>
+          <th field="price" width=60 align="right">Price</th>
+        </tr>
+      </thead>
+    </table>
+
+        <!-- <p class="total">Total: Kshs. 0</p> -->
         <h2>Drop here to add to cart</h2>
       </div>
     </div>
@@ -93,6 +94,6 @@
     <script type="text/javascript" src = "js/jquery.js"></script>    
     <script type="text/javascript" scr = "bootstrap-3.3.5-dist/js/bootstrap.js"></script>
     <script src="js/jquery.easyui.min.js"></script>
-    <script type="text/javascript" src = "script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
   </html>
