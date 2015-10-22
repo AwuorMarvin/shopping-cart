@@ -30,11 +30,14 @@ $(function(){
                 }
             });
 
-            $('#button').click(function(){
-                alert("here");
+            $('.button').click(function(e){
+                var price = $(this).data('price');
+                var name = $(this).data('name');
+                addProduct(name, parseFloat(price));
+                alert(name+ " has been added to your shopping cart.");
             });
         });
-        
+     
         function addProduct(name,price){
             var dg = $('#cartcontent');
             var data = dg.datagrid('getData');
@@ -62,3 +65,14 @@ $(function(){
             }
             dg.datagrid('reloadFooter', [{name:'Total',price:cost}]);
         }
+
+//         $("#cartcontent").on("click", ".cancel", function (evt) {
+//     var $this = $(evt.currentTarget),
+//         cartItem = $this.parent(),
+//         newPrice = parseInt($this.data('price'));
+    
+//     cartItem.remove();
+//     sum = sum - newPrice;
+//     $("#sum").text(sum + "$");
+// });
+   

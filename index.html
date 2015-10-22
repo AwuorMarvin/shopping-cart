@@ -2,7 +2,6 @@
   <html>
   <head>
     <title></title>
-    <!--<script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>-->
     <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="easy-ui.css">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -13,44 +12,46 @@
       <div class="main col-md-9">
         <ul class="products">
           <li>
-              <a href="#" class="item">
+              <div class="item">
                   <img src="images/shirt2.gif"/>
                   <div>
                       <p><strong>AK47</strong></p>
                       <p><strong>Price: Kshs. 15</strong></p>
-                      <!-- <p><label><strong>Qty: <input type="text" name="my-item-qty" value="1" size="3" /></strong></label></p> -->
+                      
                   </div>
-              </a>
+              </div>
+              <button class="button" data-name="AK47" data-price="15" >add to cart</button>
+
           </li>
           <li>
-              <a href="#" class="item">
+              <div class="item">
                   <img src="images/shirt6.gif"/>
                   <div>
                       <p><strong>Assault Rifle</strong></p>
                       <p><strong>Price: Kshs. 200</strong></p>
-                      <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
                   </div>
-              </a>
+              </div>
+              <button class="button" data-name="Assault Rifle" data-price="200">add to cart</button>
           </li>
           <li>
-              <a href="#" class="item">
+              <div class="item">
                   <img src="images/shirt6.gif"/>
                   <div>
                       <p><strong>Cap</strong></p>
                       <p><strong>Price: Kshs. 300</strong></p>
-                      <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
                   </div>
-              </a>
+              </div>
+              <button class="button" data-name="Cap" data-price="300">add to cart</button>
           </li>
           <li>
-              <a href="#" class="item">
+              <div class="item">
                   <img src="images/croc.jpg"/>
                   <div>
                       <p><strong>Pet</strong></p>
                       <p><strong>Price: Kshs. 2000</strong></p>
-                      <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
                   </div>
-              </a>
+              </div>
+              <button class="button" data-name="Pet" data-price="2000">add to cart</button>
           </li>
           <li>
               <div class="item">
@@ -58,19 +59,19 @@
                   <div>
                       <p><strong>Nothing</strong></p>
                       <p><strong>Price: Kshs. 190</strong></p>
-                      <button class="button" data-name="Nothing" data-price="190" class="button" >add to cart</button>
                   </div>
               </div>
+              <button class="button" data-name="Nothing" data-price="190" class="button" >add to cart</button>
           </li>
           <li>
-              <a href="#" class="item">
+              <div class="item">
                   <img src="images/lying.jpg"/>
                   <div>
                       <p><strong>House</strong></p>
                       <p><strong>Price: Kshs. 278</strong></p>
-                      <input type="submit" name="my-add-button" value="add to cart" class="button" align="centre" />
                   </div>
-              </a>
+              </div>
+              <button class="button" data-name="House" data-price="278" class="button" >add to cart</button>
           </li>
         </ul>
       </div>
@@ -86,8 +87,9 @@
       </thead>
     </table>
 
-        <!-- <p class="total">Total: Kshs. 0</p> -->
+        
         <h2>Drop here to add to cart</h2>
+        <button class="check" >Checkout</button>
       </div>
     </div>
     
