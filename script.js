@@ -74,8 +74,6 @@ function removeProduct(el, event) {
     var quantity = tr.find('td[field=quantity]').text();
     for (var i = 0; i < data.total; i++) {
         var row = data.rows[i];
-        console.log("x", name);
-        console.log("name", row.name);
         if (row.name == name) {
             data.rows.splice(i, 1);
             data.total--;
