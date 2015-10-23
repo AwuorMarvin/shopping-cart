@@ -68,3 +68,6 @@ fieldset {
 p {
   font-weight: bold;
 }
+.remove {
+  color: red;
+}
